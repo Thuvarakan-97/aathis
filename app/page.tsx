@@ -1,65 +1,387 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="space-y-16">
+      {/* Hero */}
+      <section className="grid gap-10 md:grid-cols-[1.4fr,1fr] md:items-center">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+            Reinigungsfirma · Trossingen · Baden-Württemberg
+          </p>
+          <h1 className="mt-4 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
+            Ihre zuverlässige Reinigungsfirma in Baden-Württemberg
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-600 md:text-lg">
+            AATHIS ist Ihre professionelle Reinigungsfirma aus Trossingen – für
+            saubere Büros, Gebäude und private Objekte, auf die Sie sich jeden
+            Tag verlassen können.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link
+              href="/kontakt"
+              className="rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Angebot anfordern
+            </Link>
+            <Link
+              href="/kontakt"
+              className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-900 hover:border-slate-400 hover:bg-slate-50"
             >
-              Learning
-            </a>{" "}
-            center.
+              Kontakt aufnehmen
+            </Link>
+          </div>
+          <dl className="mt-8 grid gap-4 text-sm text-slate-600 sm:grid-cols-2 md:grid-cols-4">
+            <div>
+              <dt className="font-semibold text-slate-900">Zuverlässig</dt>
+              <dd className="mt-1">
+                Feste Ansprechpartner und planbare Einsätze ohne Überraschungen.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-slate-900">Professionell</dt>
+              <dd className="mt-1">
+                Geschulte Teams, klare Prozesse und hochwertige Reinigungsmittel.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-slate-900">Sorgfältig</dt>
+              <dd className="mt-1">
+                Gründliche Gebäudereinigung bis ins Detail – innen und außen.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-slate-900">Transparent</dt>
+              <dd className="mt-1">
+                Verständliche Angebote ohne versteckte Kosten oder Kleingedrucktes.
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <div className="relative">
+          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-slate-900/90">
+            <Image
+              src="/images/hero-cleaning.svg"
+              alt="Stilisiertes Motiv für professionelle Gebäudereinigung"
+              width={900}
+              height={700}
+              className="h-64 w-full object-cover opacity-80"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/40 to-transparent" />
+          </div>
+          <div className="absolute inset-x-4 -bottom-6 rounded-2xl border border-white/40 bg-white/90 p-4 shadow-xl backdrop-blur-sm sm:inset-x-8">
+            <h2 className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
+              Schnell-Anfrage
+            </h2>
+            <p className="mt-1.5 text-xs text-slate-600">
+              Beschreiben Sie kurz Ihr Objekt und Ihre Wünsche – wir melden uns mit
+              einem passenden Vorschlag.
+            </p>
+            <form className="mt-3 space-y-2">
+              <input
+                type="text"
+                placeholder="Name / Firma"
+                className="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
+              />
+              <input
+                type="email"
+                placeholder="E-Mail"
+                className="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
+              />
+              <textarea
+                rows={2}
+                placeholder="Kurz Ihr Anliegen (z.B. Büroreinigung in Trossingen)"
+                className="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
+              />
+              <button
+                type="submit"
+                className="w-full rounded-full bg-emerald-600 px-4 py-2 text-xs font-semibold text-white hover:bg-emerald-500"
+              >
+                Unverbindliche Anfrage senden
+              </button>
+              <p className="text-[10px] text-slate-500">
+                Mit dem Absenden Ihrer Anfrage erklären Sie sich mit der
+                Verarbeitung Ihrer Angaben gemäß unserer{" "}
+                <Link
+                  href="/datenschutz"
+                  className="underline underline-offset-2 hover:text-slate-700"
+                >
+                  Datenschutzerklärung
+                </Link>{" "}
+                einverstanden.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Intro */}
+      <section className="grid gap-10 md:grid-cols-2">
+        <div>
+          <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+            AATHIS – Sauberkeit mit System und Verantwortung
+          </h2>
+          <p className="mt-4 text-sm leading-relaxed text-slate-600 md:text-base">
+            AATHIS ist eine professionelle Reinigungsfirma mit Sitz in Trossingen,
+            Baden-Württemberg. Wir unterstützen Unternehmen, Hausverwaltungen und
+            Privathaushalte mit zuverlässiger Gebäudereinigung, Büroreinigung,
+            Unterhaltsreinigung und weiteren Services rund um Ihre Immobilie.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-base">
+            Mit klaren Abläufen, geschultem Personal und transparenten Preisen
+            sorgen wir dafür, dass Ihre Flächen nicht nur sauber aussehen, sondern
+            langfristig gepflegt bleiben.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className="space-y-3 rounded-3xl bg-slate-900 px-6 py-6 text-slate-100">
+          <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-300">
+            Warum AATHIS?
+          </h3>
+          <ul className="space-y-2 text-sm">
+            <li>• Reinigungsfirma mit regionaler Nähe in Trossingen</li>
+            <li>• Feste Ansprechpartner und klare Kommunikation</li>
+            <li>• Flexible Leistungspakete für Gewerbe und Privatkunden</li>
+            <li>• Hohe Qualitäts- und Umweltstandards</li>
+          </ul>
+          <Link
+            href="/ueber-uns"
+            className="inline-flex items-center text-sm font-semibold text-emerald-200 hover:text-emerald-100"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            Mehr über AATHIS erfahren →
+          </Link>
         </div>
-      </main>
+      </section>
+
+      {/* Leistungen */}
+      <section className="space-y-6">
+        <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+              Unsere Reinigungsleistungen im Überblick
+            </h2>
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600 md:text-base">
+              Ob laufende Unterhaltsreinigung, gründliche Gebäudereinigung oder
+              zuverlässiger Winterdienst – AATHIS bietet Ihnen ein komplettes
+              Leistungspaket für saubere und gepflegte Objekte in Trossingen und
+              ganz Baden-Württemberg.
+            </p>
+          </div>
+          <Link
+            href="/leistungen"
+            className="text-sm font-semibold text-slate-900 hover:text-slate-700"
+          >
+            Alle Leistungen ansehen →
+          </Link>
+        </div>
+        <div className="grid gap-5 md:grid-cols-3">
+          <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h3 className="text-base font-semibold text-slate-900">
+              Unterhaltsreinigung
+            </h3>
+            <p className="mt-2 text-sm text-slate-600">
+              Regelmäßige Reinigung von Büros, Praxen, Treppenhäusern und
+              Gewerbeflächen – sauberer Alltag ohne Aufwand.
+            </p>
+            <Link
+              href="/leistungen/unterhaltsreinigung"
+              className="mt-4 text-sm font-semibold text-slate-900 hover:text-slate-700"
+            >
+              Mehr zur Unterhaltsreinigung →
+            </Link>
+          </div>
+          <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h3 className="text-base font-semibold text-slate-900">
+              Büroreinigung
+            </h3>
+            <p className="mt-2 text-sm text-slate-600">
+              Saubere Arbeitsplätze, Sanitär- und Sozialräume für ein professionelles
+              Umfeld und zufriedene Mitarbeitende.
+            </p>
+            <Link
+              href="/leistungen/bueroreinigung"
+              className="mt-4 text-sm font-semibold text-slate-900 hover:text-slate-700"
+            >
+              Mehr zur Büroreinigung →
+            </Link>
+          </div>
+          <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h3 className="text-base font-semibold text-slate-900">
+              Gebäudereinigung
+            </h3>
+            <p className="mt-2 text-sm text-slate-600">
+              Innen- und Außenreinigung für Gebäude und Anlagen – von der
+              Grundreinigung bis zur Pflege der Allgemeinflächen.
+            </p>
+            <Link
+              href="/leistungen/gebaeudereinigung"
+              className="mt-4 text-sm font-semibold text-slate-900 hover:text-slate-700"
+            >
+              Mehr zur Gebäudereinigung →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Prozess „So arbeiten wir“ */}
+      <section className="space-y-6 rounded-3xl bg-white p-6 shadow-sm md:p-8">
+        <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+              So einfach kommen Sie mit AATHIS zur sauberen Lösung
+            </h2>
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600 md:text-base">
+              Unser klar strukturierter Ablauf macht die Zusammenarbeit für Sie
+              einfach, transparent und planbar.
+            </p>
+          </div>
+          <Link
+            href="/so-arbeiten-wir"
+            className="text-sm font-semibold text-slate-900 hover:text-slate-700"
+          >
+            Mehr über unseren Ablauf →
+          </Link>
+        </div>
+        <div className="grid gap-4 md:grid-cols-4">
+          {[
+            {
+              title: "1. Anfrage senden",
+              text: "Sie senden uns Ihre Anfrage – bequem per Kontaktformular, E-Mail oder Telefon.",
+            },
+            {
+              title: "2. Beratung / Besichtigung",
+              text: "Wir klären Anforderungen und besichtigen bei Bedarf Ihr Objekt vor Ort.",
+            },
+            {
+              title: "3. Individuelles Angebot",
+              text: "Sie erhalten ein faires, transparentes Angebot passend zu Ihrem Bedarf.",
+            },
+            {
+              title: "4. Durchführung",
+              text: "Unser Team startet pünktlich und sorgt für dauerhaft überzeugende Sauberkeit.",
+            },
+          ].map((step, index) => (
+            <div
+              key={step.title}
+              className="rounded-2xl border border-slate-200 bg-slate-50 p-4"
+            >
+              <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                Schritt {index + 1}
+              </div>
+              <h3 className="mt-2 text-sm font-semibold text-slate-900">
+                {step.title}
+              </h3>
+              <p className="mt-2 text-xs leading-relaxed text-slate-600 md:text-sm">
+                {step.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Kundenvorteile */}
+      <section className="space-y-5">
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+          Ihre Vorteile mit AATHIS als Reinigungsfirma
+        </h2>
+        <div className="grid gap-4 md:grid-cols-3">
+          <div className="rounded-2xl border border-slate-200 bg-white p-5">
+            <h3 className="text-sm font-semibold text-slate-900">
+              Zeitersparnis
+            </h3>
+            <p className="mt-2 text-sm text-slate-600">
+              Sie konzentrieren sich auf Ihr Kerngeschäft – wir kümmern uns um
+              Reinigung, Pflege und Ordnung.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-5">
+            <h3 className="text-sm font-semibold text-slate-900">
+              Konstante Qualität
+            </h3>
+            <p className="mt-2 text-sm text-slate-600">
+              Durch feste Reinigungspläne und Qualitätskontrollen bleibt Ihr Objekt
+              dauerhaft in einem gepflegten Zustand.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-5">
+            <h3 className="text-sm font-semibold text-slate-900">
+              Individuelle Lösungen
+            </h3>
+            <p className="mt-2 text-sm text-slate-600">
+              Ob kleines Büro oder komplettes Gebäude – wir passen unsere Leistungen
+              flexibel an Ihre Anforderungen an.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="space-y-5 rounded-3xl bg-slate-900 px-6 py-8 text-slate-100 md:px-8">
+        <h2 className="text-2xl font-semibold tracking-tight">
+          Was unsere Kundinnen und Kunden sagen
+        </h2>
+        <div className="grid gap-6 md:grid-cols-3">
+          <figure>
+            <blockquote className="text-sm leading-relaxed text-slate-100">
+              „Seit AATHIS unsere Büroreinigung übernimmt, ist die Sauberkeit
+              konstant auf einem sehr hohen Niveau. Die Abstimmung läuft
+              unkompliziert und zuverlässig.“
+            </blockquote>
+            <figcaption className="mt-3 text-xs text-slate-300">
+              Geschäftsführerin eines mittelständischen Unternehmens aus
+              Baden-Württemberg
+            </figcaption>
+          </figure>
+          <figure>
+            <blockquote className="text-sm leading-relaxed text-slate-100">
+              „Die Hausreinigung und Treppenhauspflege in unseren Mehrfamilienhäusern
+              läuft reibungslos. Beschwerden der Mieter sind seitdem deutlich
+              zurückgegangen.“
+            </blockquote>
+            <figcaption className="mt-3 text-xs text-slate-300">
+              Hausverwaltung aus der Region Trossingen
+            </figcaption>
+          </figure>
+          <figure>
+            <blockquote className="text-sm leading-relaxed text-slate-100">
+              „Nach einer Renovierung hat AATHIS die Endbaureinigung übernommen.
+              Alles war pünktlich und bezugsfertig – absolut empfehlenswert.“
+            </blockquote>
+            <figcaption className="mt-3 text-xs text-slate-300">
+              Privatkunde aus Trossingen
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      {/* CTA Banner */}
+      <section className="rounded-3xl bg-emerald-600 px-6 py-8 text-white md:px-8">
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div>
+            <h2 className="text-xl font-semibold tracking-tight md:text-2xl">
+              Lassen Sie AATHIS für Sie reinigen.
+            </h2>
+            <p className="mt-2 text-sm md:text-base">
+              Schildern Sie uns kurz Ihr Objekt und Ihre Wünsche. Wir melden uns
+              zeitnah mit einem klaren Vorschlag.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/kontakt"
+              className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-emerald-700 shadow-sm hover:bg-slate-100"
+            >
+              Unverbindliches Angebot erhalten
+            </Link>
+            <Link
+              href="/kontakt"
+              className="rounded-full border border-emerald-200 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-500"
+            >
+              Direkt Kontakt aufnehmen
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
