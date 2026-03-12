@@ -7,13 +7,13 @@ export default function UeberUnsPage() {
       <section className="grid gap-10 md:grid-cols-[1.4fr,1fr] md:items-center">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-            Über AATHIS
+            Über Athi‘s Service
           </p>
           <h1 className="mt-4 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-            AATHIS – Ihre Reinigungsfirma aus Trossingen
+            Athi‘s Service – Ihre Reinigungsfirma aus Trossingen
           </h1>
           <p className="mt-4 text-sm leading-relaxed text-slate-600 md:text-base">
-            AATHIS steht für professionelle Reinigung, klare Abläufe und
+            Athi‘s Service steht für professionelle Reinigung, klare Abläufe und
             persönliche Betreuung. Als Reinigungsfirma mit Sitz in Trossingen,
             Baden-Württemberg, verbinden wir regionale Nähe mit hohen
             Qualitätsansprüchen.

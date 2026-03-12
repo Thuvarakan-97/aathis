@@ -24,9 +24,11 @@ export default function KontaktPage() {
             <div>
               <p className="font-semibold text-slate-900">Adresse</p>
               <p className="mt-1">
-                AATHIS
+                Athi‘s Service
                 <br />
-                Trossingen 78647, Baden-Württemberg
+                Augusta Straße 14
+                <br />
+                78647 Trossingen
               </p>
             </div>
             <div>
@@ -130,7 +132,7 @@ export default function KontaktPage() {
               </div>
               <button
                 type="submit"
-                className="mt-2 inline-flex rounded-full bg-slate-900 px-6 py-2.5 text-sm font-semibold text-white hover:bg-slate-800"
+                className="mt-2 inline-flex rounded-full bg-sky-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-sky-700"
               >
                 Nachricht senden
               </button>
@@ -149,7 +151,7 @@ export default function KontaktPage() {
         </div>
       </section>
 
-      <section className="rounded-3xl bg-emerald-600 px-6 py-7 text-white md:px-8">
+      <section className="rounded-3xl bg-sky-600 px-6 py-7 text-white md:px-8">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-lg font-semibold tracking-tight md:text-xl">

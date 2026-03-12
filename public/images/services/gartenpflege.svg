@@ -1,0 +1,17 @@
+<svg width="400" height="260" viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="260" rx="24" fill="#022c22"/>
+  <rect x="40" y="156" width="320" height="40" rx="18" fill="#064e3b"/>
+  <circle cx="108" cy="156" r="44" fill="#16a34a"/>
+  <circle cx="168" cy="148" r="44" fill="#22c55e"/>
+  <circle cx="228" cy="156" r="44" fill="#16a34a"/>
+  <circle cx="288" cy="148" r="44" fill="#22c55e"/>
+  <rect x="64" y="72" width="72" height="16" rx="8" fill="#bbf7d0"/>
+  <rect x="64" y="96" width="112" height="10" rx="5" fill="#6ee7b7"/>
+  <rect x="64" y="112" width="92" height="8" rx="4" fill="#047857"/>
+  <rect x="224" y="72" width="112" height="16" rx="8" fill="#bbf7d0"/>
+  <rect x="224" y="96" width="132" height="10" rx="5" fill="#6ee7b7"/>
+  <rect x="224" y="112" width="104" height="8" rx="4" fill="#047857"/>
+  <circle cx="324" cy="60" r="18" fill="#facc15"/>
+  <path d="M324 48V56M324 64V72M312 60H320M328 60H336M317 53L321 57M331 63L335 67M313 67L317 63M331 57L335 53" stroke="#fefce8" stroke-width="3" stroke-linecap="round"/>
+</svg>
+

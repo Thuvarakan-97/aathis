@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,9 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AATHIS – Ihre zuverlässige Reinigungsfirma in Baden-Württemberg",
+  title:
+    "Athi‘s Service – Ihre zuverlässige Reinigungsfirma in Baden-Württemberg",
   description:
-    "AATHIS ist Ihre professionelle Reinigungsfirma aus Trossingen für Gebäudereinigung, Büroreinigung, Unterhaltsreinigung, Glasreinigung, Winterdienst und mehr.",
+    "Athi‘s Service ist Ihre professionelle Reinigungsfirma aus Trossingen für Gebäudereinigung, Büroreinigung, Unterhaltsreinigung, Glasreinigung, Winterdienst und mehr.",
 };
 
 const navServices = [
@@ -40,18 +42,29 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-50 text-slate-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-sky-50 text-slate-900`}
       >
         <div className="flex min-h-screen flex-col">
           <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur">
             <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
-              <div className="flex items-center gap-2">
-                <Link href="/" className="text-xl font-semibold tracking-tight">
-                  AATHIS
+              <div className="flex items-center gap-4">
+                <Link href="/" className="flex items-center gap-3">
+                  <Image
+                    src="/images/logo.jpeg"
+                    alt="Logo Athi‘s Service"
+                    width={170}
+                    height={48}
+                    className="h-10 w-auto sm:h-12"
+                  />
+                  <div className="hidden flex-col leading-tight sm:flex">
+                    <span className="text-sm font-semibold tracking-tight sm:text-base">
+                      Athi‘s Service
+                    </span>
+                    <span className="text-[10px] font-medium uppercase tracking-[0.18em] text-slate-500">
+                      Reinigungsfirma in Trossingen
+                    </span>
+                  </div>
                 </Link>
-                <span className="hidden text-xs text-slate-500 sm:inline">
-                  Reinigungsfirma in Trossingen
-                </span>
               </div>
               <nav className="hidden items-center gap-6 text-sm font-medium text-slate-700 md:flex">
                 <Link href="/" className="hover:text-slate-900">
@@ -91,7 +104,7 @@ export default function RootLayout({
                 </Link>
                 <Link
                   href="/kontakt"
-                  className="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
+                  className="rounded-full bg-sky-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-sky-700"
                 >
                   Angebot anfordern
                 </Link>
@@ -99,7 +112,7 @@ export default function RootLayout({
               <div className="flex items-center gap-2 md:hidden">
                 <Link
                   href="/kontakt"
-                  className="rounded-full bg-slate-900 px-3 py-1.5 text-xs font-semibold text-white shadow-sm hover:bg-slate-800"
+                  className="rounded-full bg-sky-600 px-3 py-1.5 text-xs font-semibold text-white shadow-sm hover:bg-sky-700"
                 >
                   Angebot anfordern
                 </Link>
@@ -153,7 +166,7 @@ export default function RootLayout({
             <div className="mx-auto max-w-6xl px-4 py-10 md:px-6">
               <div className="grid gap-8 md:grid-cols-4">
                 <div>
-                  <h2 className="text-lg font-semibold">AATHIS</h2>
+                  <h2 className="text-lg font-semibold">Athi‘s Service</h2>
                   <p className="mt-3 text-sm text-slate-600">
                     Professionelle Reinigungsfirma aus Trossingen, Baden-Württemberg.
                     Zuverlässige Gebäudereinigung, Büroreinigung und Objektservice
@@ -202,9 +215,11 @@ export default function RootLayout({
                     Kontakt
                   </h3>
                   <p className="mt-3 text-sm text-slate-700">
-                    AATHIS
+                    Athi‘s Service
                     <br />
-                    Trossingen 78647, Baden-Württemberg
+                    Augusta Straße 14
+                    <br />
+                    78647 Trossingen
                   </p>
                   <p className="mt-3 text-sm text-slate-700">
                     Telefon: <span className="text-slate-500">[Telefon einfügen]</span>

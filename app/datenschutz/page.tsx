@@ -28,9 +28,11 @@ export default function DatenschutzPage() {
             Verantwortlicher für die Datenverarbeitung auf dieser Website ist:
           </p>
           <p className="mt-1">
-            AATHIS
+            Athi‘s Service
             <br />
-            Trossingen 78647, Baden-Württemberg
+            Augusta Straße 14
+            <br />
+            78647 Trossingen
             <br />
             Deutschland
             <br />

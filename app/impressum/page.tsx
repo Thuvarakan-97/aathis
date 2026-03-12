@@ -16,9 +16,11 @@ export default function ImpressumPage() {
         <div>
           <p className="font-semibold text-slate-900">Angaben gemäß § 5 TMG</p>
           <p className="mt-2">
-            AATHIS
+            Athi‘s Service
             <br />
-            Trossingen 78647, Baden-Württemberg
+            Augusta Straße 14
+            <br />
+            78647 Trossingen
             <br />
             Deutschland
           </p>

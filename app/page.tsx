@@ -1,117 +1,130 @@
 import Link from "next/link";
 import Image from "next/image";
 
+const heroImages = ["/images/pic1.jpg", "/images/pic2.jpg", "/images/pic3.jpg"];
+
 export default function Home() {
   return (
     <div className="space-y-16">
       {/* Hero */}
-      <section className="grid gap-10 md:grid-cols-[1.4fr,1fr] md:items-center">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-            Reinigungsfirma · Trossingen · Baden-Württemberg
-          </p>
-          <h1 className="mt-4 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
-            Ihre zuverlässige Reinigungsfirma in Baden-Württemberg
-          </h1>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-600 md:text-lg">
-            AATHIS ist Ihre professionelle Reinigungsfirma aus Trossingen – für
-            saubere Büros, Gebäude und private Objekte, auf die Sie sich jeden
-            Tag verlassen können.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href="/kontakt"
-              className="rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-800"
-            >
-              Angebot anfordern
-            </Link>
-            <Link
-              href="/kontakt"
-              className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-900 hover:border-slate-400 hover:bg-slate-50"
-            >
-              Kontakt aufnehmen
-            </Link>
-          </div>
-          <dl className="mt-8 grid gap-4 text-sm text-slate-600 sm:grid-cols-2 md:grid-cols-4">
-            <div>
-              <dt className="font-semibold text-slate-900">Zuverlässig</dt>
-              <dd className="mt-1">
-                Feste Ansprechpartner und planbare Einsätze ohne Überraschungen.
-              </dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-slate-900">Professionell</dt>
-              <dd className="mt-1">
-                Geschulte Teams, klare Prozesse und hochwertige Reinigungsmittel.
-              </dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-slate-900">Sorgfältig</dt>
-              <dd className="mt-1">
-                Gründliche Gebäudereinigung bis ins Detail – innen und außen.
-              </dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-slate-900">Transparent</dt>
-              <dd className="mt-1">
-                Verständliche Angebote ohne versteckte Kosten oder Kleingedrucktes.
-              </dd>
-            </div>
-          </dl>
-        </div>
-        <div className="relative">
-          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-slate-900/90">
+      <section className="relative overflow-hidden rounded-3xl bg-sky-900/80 px-4 py-10 md:px-8 md:py-14">
+        {/* Vollflächige Background-Slideshow */}
+        <div className="absolute inset-0">
+          {heroImages.map((src, index) => (
             <Image
-              src="/images/hero-cleaning.svg"
-              alt="Stilisiertes Motiv für professionelle Gebäudereinigung"
-              width={900}
-              height={700}
-              className="h-64 w-full object-cover opacity-80"
+              key={src}
+              src={src}
+              alt="Reinigung bei Athi‘s Service"
+              fill
+              sizes="100vw"
+              className="hero-slide object-cover"
+              style={{ animationDelay: `${index * 5}s` }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/40 to-transparent" />
-          </div>
-          <div className="absolute inset-x-4 -bottom-6 rounded-2xl border border-white/40 bg-white/90 p-4 shadow-xl backdrop-blur-sm sm:inset-x-8">
-            <h2 className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
-              Schnell-Anfrage
-            </h2>
-            <p className="mt-1.5 text-xs text-slate-600">
-              Beschreiben Sie kurz Ihr Objekt und Ihre Wünsche – wir melden uns mit
-              einem passenden Vorschlag.
+          ))}
+          <div className="absolute inset-0 bg-sky-900/70" />
+        </div>
+
+        <div className="relative grid gap-10 md:grid-cols-[1.4fr,1fr] md:items-center">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-100">
+              Reinigungsfirma · Trossingen · Baden-Württemberg
             </p>
-            <form className="mt-3 space-y-2">
-              <input
-                type="text"
-                placeholder="Name / Firma"
-                className="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
-              />
-              <input
-                type="email"
-                placeholder="E-Mail"
-                className="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
-              />
-              <textarea
-                rows={2}
-                placeholder="Kurz Ihr Anliegen (z.B. Büroreinigung in Trossingen)"
-                className="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
-              />
-              <button
-                type="submit"
-                className="w-full rounded-full bg-emerald-600 px-4 py-2 text-xs font-semibold text-white hover:bg-emerald-500"
+            <h1 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl">
+              Ihre zuverlässige Reinigungsfirma in Baden-Württemberg
+            </h1>
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-sky-100 md:text-lg">
+              Athi‘s Service ist Ihre professionelle Reinigungsfirma aus
+              Trossingen – für saubere Büros, Gebäude und private Objekte, auf
+              die Sie sich jeden Tag verlassen können.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                href="/kontakt"
+                className="rounded-full bg-sky-300 px-6 py-3 text-sm font-semibold text-sky-900 shadow-sm hover:bg-sky-200"
               >
-                Unverbindliche Anfrage senden
-              </button>
-              <p className="text-[10px] text-slate-500">
-                Mit dem Absenden Ihrer Anfrage erklären Sie sich mit der
-                Verarbeitung Ihrer Angaben gemäß unserer{" "}
-                <Link
-                  href="/datenschutz"
-                  className="underline underline-offset-2 hover:text-slate-700"
-                >
-                  Datenschutzerklärung
-                </Link>{" "}
-                einverstanden.
+                Angebot anfordern
+              </Link>
+              <Link
+                href="/kontakt"
+                className="rounded-full border border-sky-100/80 px-6 py-3 text-sm font-semibold text-sky-50 hover:border-sky-50 hover:bg-sky-900/40"
+              >
+                Kontakt aufnehmen
+              </Link>
+            </div>
+            <dl className="mt-8 grid gap-4 text-sm text-sky-100/90 sm:grid-cols-2 md:grid-cols-4">
+              <div>
+                <dt className="font-semibold text-white">Zuverlässig</dt>
+                <dd className="mt-1">
+                  Feste Ansprechpartner und planbare Einsätze ohne
+                  Überraschungen.
+                </dd>
+              </div>
+              <div>
+                <dt className="font-semibold text-white">Professionell</dt>
+                <dd className="mt-1">
+                  Geschulte Teams, klare Prozesse und hochwertige
+                  Reinigungsmittel.
+                </dd>
+              </div>
+              <div>
+                <dt className="font-semibold text-white">Sorgfältig</dt>
+                <dd className="mt-1">
+                  Gründliche Gebäudereinigung bis ins Detail – innen und außen.
+                </dd>
+              </div>
+              <div>
+                <dt className="font-semibold text-white">Transparent</dt>
+                <dd className="mt-1">
+                  Verständliche Angebote ohne versteckte Kosten oder
+                  Kleingedrucktes.
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <div className="relative">
+            <div className="rounded-2xl border border-sky-100/80 bg-white/95 p-4 shadow-xl backdrop-blur-sm sm:p-5">
+              <h2 className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
+                Schnell-Anfrage
+              </h2>
+              <p className="mt-1.5 text-xs text-slate-600">
+                Beschreiben Sie kurz Ihr Objekt und Ihre Wünsche – wir melden
+                uns mit einem passenden Vorschlag.
               </p>
-            </form>
+              <form className="mt-3 space-y-2">
+                <input
+                  type="text"
+                  placeholder="Name / Firma"
+                  className="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
+                />
+                <input
+                  type="email"
+                  placeholder="E-Mail"
+                  className="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
+                />
+                <textarea
+                  rows={2}
+                  placeholder="Kurz Ihr Anliegen (z.B. Büroreinigung in Trossingen)"
+                  className="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
+                />
+                <button
+                  type="submit"
+                  className="w-full rounded-full bg-sky-600 px-4 py-2 text-xs font-semibold text-white hover:bg-sky-500"
+                >
+                  Unverbindliche Anfrage senden
+                </button>
+                <p className="text-[10px] text-slate-500">
+                  Mit dem Absenden Ihrer Anfrage erklären Sie sich mit der
+                  Verarbeitung Ihrer Angaben gemäß unserer{" "}
+                  <Link
+                    href="/datenschutz"
+                    className="underline underline-offset-2 hover:text-slate-700"
+                  >
+                    Datenschutzerklärung
+                  </Link>{" "}
+                  einverstanden.
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -123,8 +136,9 @@ export default function Home() {
             AATHIS – Sauberkeit mit System und Verantwortung
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-slate-600 md:text-base">
-            AATHIS ist eine professionelle Reinigungsfirma mit Sitz in Trossingen,
-            Baden-Württemberg. Wir unterstützen Unternehmen, Hausverwaltungen und
+            Athi‘s Service ist eine professionelle Reinigungsfirma mit Sitz in
+            Trossingen, Baden-Württemberg. Wir unterstützen Unternehmen,
+            Hausverwaltungen und
             Privathaushalte mit zuverlässiger Gebäudereinigung, Büroreinigung,
             Unterhaltsreinigung und weiteren Services rund um Ihre Immobilie.
           </p>
@@ -134,7 +148,7 @@ export default function Home() {
             langfristig gepflegt bleiben.
           </p>
         </div>
-        <div className="space-y-3 rounded-3xl bg-slate-900 px-6 py-6 text-slate-100">
+        <div className="space-y-3 rounded-3xl bg-sky-900 px-6 py-6 text-slate-100">
           <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-300">
             Warum AATHIS?
           </h3>
@@ -146,7 +160,7 @@ export default function Home() {
           </ul>
           <Link
             href="/ueber-uns"
-            className="inline-flex items-center text-sm font-semibold text-emerald-200 hover:text-emerald-100"
+            className="inline-flex items-center text-sm font-semibold text-sky-100 hover:text-sky-50"
           >
             Mehr über AATHIS erfahren →
           </Link>
@@ -263,7 +277,7 @@ export default function Home() {
           ].map((step, index) => (
             <div
               key={step.title}
-              className="rounded-2xl border border-slate-200 bg-slate-50 p-4"
+              className="rounded-2xl border border-sky-100 bg-sky-50 p-4"
             >
               <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">
                 Schritt {index + 1}
@@ -316,7 +330,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="space-y-5 rounded-3xl bg-slate-900 px-6 py-8 text-slate-100 md:px-8">
+      <section className="space-y-5 rounded-3xl bg-sky-900 px-6 py-8 text-slate-100 md:px-8">
         <h2 className="text-2xl font-semibold tracking-tight">
           Was unsere Kundinnen und Kunden sagen
         </h2>
@@ -355,11 +369,11 @@ export default function Home() {
       </section>
 
       {/* CTA Banner */}
-      <section className="rounded-3xl bg-emerald-600 px-6 py-8 text-white md:px-8">
+      <section className="rounded-3xl bg-sky-600 px-6 py-8 text-white md:px-8">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-xl font-semibold tracking-tight md:text-2xl">
-              Lassen Sie AATHIS für Sie reinigen.
+              Lassen Sie Athi‘s Service für Sie reinigen.
             </h2>
             <p className="mt-2 text-sm md:text-base">
               Schildern Sie uns kurz Ihr Objekt und Ihre Wünsche. Wir melden uns
@@ -369,13 +383,13 @@ export default function Home() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/kontakt"
-              className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-emerald-700 shadow-sm hover:bg-slate-100"
+              className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-sky-700 shadow-sm hover:bg-sky-50"
             >
               Unverbindliches Angebot erhalten
             </Link>
             <Link
               href="/kontakt"
-              className="rounded-full border border-emerald-200 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-500"
+              className="rounded-full border border-sky-200 px-5 py-2.5 text-sm font-semibold text-white hover:bg-sky-500"
             >
               Direkt Kontakt aufnehmen
             </Link>

@@ -68,7 +68,7 @@ export default function TreppenhausreinigungPage() {
         </aside>
       </section>
 
-      <section className="rounded-3xl bg-emerald-600 px-6 py-7 text-white md:px-8">
+      <section className="rounded-3xl bg-sky-600 px-6 py-7 text-white md:px-8">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-lg font-semibold tracking-tight md:text-xl">
@@ -81,7 +81,7 @@ export default function TreppenhausreinigungPage() {
           </div>
           <Link
             href="/kontakt"
-            className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-emerald-700 shadow-sm hover:bg-slate-100"
+            className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-sky-700 shadow-sm hover:bg-sky-50"
           >
             Angebot anfordern
           </Link>
