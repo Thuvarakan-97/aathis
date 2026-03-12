@@ -38,9 +38,9 @@ export default function ImpressumPage() {
         <div>
           <p className="font-semibold text-slate-900">Kontakt</p>
           <p className="mt-1">
-            Telefon: [Platzhalter Telefonnummer eintragen]
+            Telefon: 0177 2061431
             <br />
-            E-Mail: [Platzhalter E-Mail-Adresse eintragen]
+            E-Mail: Athis-Dienstleistungen@hotmail.com
           </p>
         </div>
 

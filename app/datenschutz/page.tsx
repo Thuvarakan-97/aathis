@@ -36,9 +36,9 @@ export default function DatenschutzPage() {
             <br />
             Deutschland
             <br />
-            Telefon: [Platzhalter Telefonnummer]
+            Telefon: 0177 2061431
             <br />
-            E-Mail: [Platzhalter E-Mail-Adresse]
+            E-Mail: Athis-Dienstleistungen@hotmail.com
           </p>
         </div>
 

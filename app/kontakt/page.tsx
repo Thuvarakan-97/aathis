@@ -34,14 +34,16 @@ export default function KontaktPage() {
             <div>
               <p className="font-semibold text-slate-900">Telefon</p>
               <p className="mt-1">
-                Telefon: <span className="text-slate-500">[Telefon einfügen]</span>
+                Telefon: <span className="text-slate-700">0177 2061431</span>
               </p>
             </div>
             <div>
               <p className="font-semibold text-slate-900">E-Mail</p>
               <p className="mt-1">
                 E-Mail:{" "}
-                <span className="text-slate-500">[E-Mail-Adresse einfügen]</span>
+                <span className="text-slate-700">
+                  Athis-Dienstleistungen@hotmail.com
+                </span>
               </p>
             </div>
             <div>

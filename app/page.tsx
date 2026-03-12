@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="space-y-16">
       {/* Hero */}
-      <section className="relative overflow-hidden rounded-3xl bg-sky-900/80 px-4 py-10 md:px-8 md:py-14">
+      <section className="relative overflow-hidden rounded-3xl bg-sky-900/10 px-4 py-10 md:px-8 md:py-14">
         {/* Vollflächige Background-Slideshow */}
         <div className="absolute inset-0">
           {heroImages.map((src, index) => (
@@ -21,7 +21,8 @@ export default function Home() {
               style={{ animationDelay: `${index * 5}s` }}
             />
           ))}
-          <div className="absolute inset-0 bg-sky-900/70" />
+          {/* Leichter, nur unten stärkerer Verlauf für bessere Lesbarkeit */}
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-sky-900/10 via-sky-900/25 to-sky-900/40" />
         </div>
 
         <div className="relative grid gap-10 md:grid-cols-[1.4fr,1fr] md:items-center">
