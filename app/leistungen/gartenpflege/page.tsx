@@ -12,7 +12,7 @@ export default function GartenpflegePage() {
         </h1>
         <p className="max-w-3xl text-sm leading-relaxed text-slate-600 md:text-base">
           Gepflegte Außenbereiche runden das Erscheinungsbild Ihrer Immobilie ab.
-          AATHIS übernimmt die regelmäßige Gartenpflege und Pflege von
+          ATHIS übernimmt die regelmäßige Gartenpflege und Pflege von
           Außenanlagen in Trossingen und der Region Baden-Württemberg.
         </p>
       </section>
@@ -26,7 +26,7 @@ export default function GartenpflegePage() {
             <ul className="mt-3 space-y-2 text-sm text-slate-600 md:text-base">
               <li>• Ansprechendes Erscheinungsbild Ihrer Immobilie</li>
               <li>• Saisonale Pflege nach festem Plan</li>
-              <li>• Kombinierbar mit anderen AATHIS-Leistungen</li>
+              <li>• Kombinierbar mit anderen ATHIS-Leistungen</li>
               <li>• Individuelle Pakete je nach Grünfläche</li>
             </ul>
           </div>
@@ -56,7 +56,7 @@ export default function GartenpflegePage() {
           </ul>
           <div className="mt-4 border-t border-slate-200 pt-4 text-sm text-slate-600">
             <p className="font-semibold text-slate-900">
-              Warum AATHIS für Ihre Gartenpflege?
+              Warum ATHIS für Ihre Gartenpflege?
             </p>
             <p className="mt-2">
               Wir kombinieren professionelle Gartenpflege mit einem Verständnis
@@ -71,7 +71,7 @@ export default function GartenpflegePage() {
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-lg font-semibold tracking-tight md:text-xl">
-              Gartenpflege mit AATHIS anfragen
+              Gartenpflege mit ATHIS anfragen
             </h2>
             <p className="mt-1 text-sm md:text-base">
               Nennen Sie uns Flächengröße, Pflanzenbestand und gewünschte

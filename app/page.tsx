@@ -91,20 +91,40 @@ export default function Home() {
                 Beschreiben Sie kurz Ihr Objekt und Ihre Wünsche – wir melden
                 uns mit einem passenden Vorschlag.
               </p>
-              <form className="mt-3 space-y-2">
+              <form
+                className="mt-3 space-y-2"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="81c96383-54a8-4b6c-b573-d02c3da367b5"
+                />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="Neue Schnell-Anfrage von der Startseite"
+                />
                 <input
                   type="text"
+                  name="name"
                   placeholder="Name / Firma"
+                  required
                   className="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
                 />
                 <input
                   type="email"
+                  name="email"
                   placeholder="E-Mail"
+                  required
                   className="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
                 />
                 <textarea
                   rows={2}
+                  name="message"
                   placeholder="Kurz Ihr Anliegen (z.B. Büroreinigung in Trossingen)"
+                  required
                   className="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
                 />
                 <button
@@ -134,7 +154,7 @@ export default function Home() {
       <section className="grid gap-10 md:grid-cols-2">
         <div>
           <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-            AATHIS – Sauberkeit mit System und Verantwortung
+            ATHIS – Sauberkeit mit System und Verantwortung
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-slate-600 md:text-base">
             Athi‘s Service ist eine professionelle Reinigungsfirma mit Sitz in
@@ -151,7 +171,7 @@ export default function Home() {
         </div>
         <div className="space-y-3 rounded-3xl bg-sky-900 px-6 py-6 text-slate-100">
           <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-300">
-            Warum AATHIS?
+            Warum ATHIS?
           </h3>
           <ul className="space-y-2 text-sm">
             <li>• Reinigungsfirma mit regionaler Nähe in Trossingen</li>
@@ -163,7 +183,7 @@ export default function Home() {
             href="/ueber-uns"
             className="inline-flex items-center text-sm font-semibold text-sky-100 hover:text-sky-50"
           >
-            Mehr über AATHIS erfahren →
+            Mehr über ATHIS erfahren →
           </Link>
         </div>
       </section>
@@ -177,9 +197,13 @@ export default function Home() {
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600 md:text-base">
               Ob laufende Unterhaltsreinigung, gründliche Gebäudereinigung oder
-              zuverlässiger Winterdienst – AATHIS bietet Ihnen ein komplettes
+              zuverlässiger Winterdienst – ATHIS bietet Ihnen ein komplettes
               Leistungspaket für saubere und gepflegte Objekte in Trossingen und
               ganz Baden-Württemberg.
+            </p>
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600 md:text-base">
+              Dazu gehören unter anderem Industriereinigung, Entrümpelung,
+              Winterdienst und Glas/Fenster Reinigung.
             </p>
           </div>
           <Link
@@ -243,7 +267,7 @@ export default function Home() {
         <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>
             <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-              So einfach kommen Sie mit AATHIS zur sauberen Lösung
+              So einfach kommen Sie mit ATHIS zur sauberen Lösung
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600 md:text-base">
               Unser klar strukturierter Ablauf macht die Zusammenarbeit für Sie
@@ -297,7 +321,7 @@ export default function Home() {
       {/* Kundenvorteile */}
       <section className="space-y-5">
         <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-          Ihre Vorteile mit AATHIS als Reinigungsfirma
+          Ihre Vorteile mit ATHIS als Reinigungsfirma
         </h2>
         <div className="grid gap-4 md:grid-cols-3">
           <div className="rounded-2xl border border-slate-200 bg-white p-5">
@@ -338,7 +362,7 @@ export default function Home() {
         <div className="grid gap-6 md:grid-cols-3">
           <figure>
             <blockquote className="text-sm leading-relaxed text-slate-100">
-              „Seit AATHIS unsere Büroreinigung übernimmt, ist die Sauberkeit
+              „Seit ATHIS unsere Büroreinigung übernimmt, ist die Sauberkeit
               konstant auf einem sehr hohen Niveau. Die Abstimmung läuft
               unkompliziert und zuverlässig.“
             </blockquote>
@@ -359,8 +383,8 @@ export default function Home() {
           </figure>
           <figure>
             <blockquote className="text-sm leading-relaxed text-slate-100">
-              „Nach einer Renovierung hat AATHIS die Endbaureinigung übernommen.
-              Alles war pünktlich und bezugsfertig – absolut empfehlenswert.“
+              „Unsere Glas/Fenster Reinigung durch ATHIS ist immer pünktlich,
+              gründlich und absolut empfehlenswert.“
             </blockquote>
             <figcaption className="mt-3 text-xs text-slate-300">
               Privatkunde aus Trossingen

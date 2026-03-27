@@ -9,10 +9,10 @@ export default function UnterhaltsreinigungPage() {
           Leistungen · Unterhaltsreinigung
         </p>
         <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-          Unterhaltsreinigung mit AATHIS – zuverlässig und gründlich
+          Unterhaltsreinigung mit ATHIS – zuverlässig und gründlich
         </h1>
         <p className="max-w-3xl text-sm leading-relaxed text-slate-600 md:text-base">
-          Mit der Unterhaltsreinigung von AATHIS sorgen Sie dafür, dass Büros,
+          Mit der Unterhaltsreinigung von ATHIS sorgen Sie dafür, dass Büros,
           Praxen, Treppenhäuser und Gewerbeflächen in Trossingen und ganz
           Baden-Württemberg dauerhaft sauber und gepflegt bleiben. Wir
           übernehmen die regelmäßige Reinigung in den Intervallen, die zu Ihrem
@@ -76,10 +76,10 @@ export default function UnterhaltsreinigungPage() {
           </ul>
           <div className="mt-4 border-t border-slate-200 pt-4 text-sm text-slate-600">
             <p className="font-semibold text-slate-900">
-              Warum AATHIS für Ihre Unterhaltsreinigung?
+              Warum ATHIS für Ihre Unterhaltsreinigung?
             </p>
             <p className="mt-2">
-              AATHIS steht für Zuverlässigkeit, Transparenz und sorgfältige
+              ATHIS steht für Zuverlässigkeit, Transparenz und sorgfältige
               Arbeit. Wir stimmen die Unterhaltsreinigung auf Ihre
               Öffnungszeiten ab, arbeiten diskret und achten auf Details.
             </p>
@@ -92,7 +92,7 @@ export default function UnterhaltsreinigungPage() {
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-lg font-semibold tracking-tight md:text-xl">
-              Unterhaltsreinigung mit AATHIS anfragen
+              Unterhaltsreinigung mit ATHIS anfragen
             </h2>
             <p className="mt-1 text-sm md:text-base">
               Beschreiben Sie uns kurz Ihr Objekt und die gewünschten Intervalle

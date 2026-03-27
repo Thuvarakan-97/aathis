@@ -19,15 +19,20 @@ export const metadata: Metadata = {
     "Athi‘s Service – Ihre zuverlässige Reinigungsfirma in Baden-Württemberg",
   description:
     "Athi‘s Service ist Ihre professionelle Reinigungsfirma aus Trossingen für Gebäudereinigung, Büroreinigung, Unterhaltsreinigung, Glasreinigung, Winterdienst und mehr.",
+  icons: {
+    icon: "/images/favicon.ico",
+    shortcut: "/images/favicon.ico",
+    apple: "/images/favicon.ico",
+  },
 };
 
 const navServices = [
   { href: "/leistungen/unterhaltsreinigung", label: "Unterhaltsreinigung" },
   { href: "/leistungen/bueroreinigung", label: "Büroreinigung" },
   { href: "/leistungen/gebaeudereinigung", label: "Gebäudereinigung" },
-  { href: "/leistungen/glasreinigung", label: "Glasreinigung" },
+  { href: "/leistungen/glasreinigung", label: "Glas/Fenster Reinigung" },
   { href: "/leistungen/treppenhausreinigung", label: "Treppenhausreinigung" },
-  { href: "/leistungen/endbaureinigung", label: "Endbaureinigung" },
+  { href: "/leistungen/industriereinigung", label: "Industriereinigung" },
   { href: "/leistungen/grundreinigung", label: "Grundreinigung" },
   { href: "/leistungen/winterdienst", label: "Winterdienst" },
   { href: "/leistungen/gartenpflege", label: "Gartenpflege" },
@@ -222,7 +227,7 @@ export default function RootLayout({
                     78647 Trossingen
                   </p>
                   <p className="mt-3 text-sm text-slate-700">
-                    Telefon: <span className="text-slate-600">0177 2061431</span>
+                    Telefon: <span className="text-slate-600">01789 777750</span>
                     <br />
                     E-Mail:{" "}
                     <span className="text-slate-600">
@@ -241,7 +246,7 @@ export default function RootLayout({
                 </div>
               </div>
               <div className="mt-8 border-t border-slate-100 pt-4 text-xs text-slate-500">
-                © {new Date().getFullYear()} AATHIS – Reinigungsfirma in
+                © {new Date().getFullYear()} ATHIS – Reinigungsfirma in
                 Baden-Württemberg. Alle Rechte vorbehalten.
               </div>
             </div>

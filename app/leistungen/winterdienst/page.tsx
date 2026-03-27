@@ -11,7 +11,7 @@ export default function WinterdienstPage() {
           Winterdienst – sicher durch die kalte Jahreszeit
         </h1>
         <p className="max-w-3xl text-sm leading-relaxed text-slate-600 md:text-base">
-          Mit dem Winterdienst von AATHIS sorgen Sie dafür, dass Wege, Einfahrten
+          Mit dem Winterdienst von ATHIS sorgen Sie dafür, dass Wege, Einfahrten
           und Parkflächen in Trossingen und Baden-Württemberg auch bei Schnee und
           Eis sicher begeh- und befahrbar bleiben.
         </p>
@@ -55,7 +55,7 @@ export default function WinterdienstPage() {
           </ul>
           <div className="mt-4 border-t border-slate-200 pt-4 text-sm text-slate-600">
             <p className="font-semibold text-slate-900">
-              Warum AATHIS für Ihren Winterdienst?
+              Warum ATHIS für Ihren Winterdienst?
             </p>
             <p className="mt-2">
               Als regionaler Dienstleister kennen wir die Witterungsbedingungen in
@@ -70,7 +70,7 @@ export default function WinterdienstPage() {
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-lg font-semibold tracking-tight md:text-xl">
-              Winterdienst mit AATHIS sichern
+              Winterdienst mit ATHIS sichern
             </h2>
             <p className="mt-1 text-sm md:text-base">
               Sichern Sie sich rechtzeitig Kapazitäten für die Wintersaison – wir

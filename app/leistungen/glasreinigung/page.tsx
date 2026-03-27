@@ -12,7 +12,7 @@ export default function GlasreinigungPage() {
         </h1>
         <p className="max-w-3xl text-sm leading-relaxed text-slate-600 md:text-base">
           Saubere Fenster und Glasflächen prägen den ersten Eindruck Ihres
-          Gebäudes. AATHIS bietet professionelle Glasreinigung für Fenster,
+          Gebäudes. ATHIS bietet professionelle Glasreinigung für Fenster,
           Glasfassaden und Schaufenster in Trossingen und ganz
           Baden-Württemberg.
         </p>
@@ -59,7 +59,7 @@ export default function GlasreinigungPage() {
           </ul>
           <div className="mt-4 border-t border-slate-200 pt-4 text-sm text-slate-600">
             <p className="font-semibold text-slate-900">
-              Warum AATHIS für Ihre Glasreinigung?
+              Warum ATHIS für Ihre Glasreinigung?
             </p>
             <p className="mt-2">
               Wir kombinieren professionelle Glasreinigung mit sorgfältiger

@@ -6,11 +6,11 @@ export default function SoArbeitenWirPage() {
           Ablauf
         </p>
         <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-          So arbeiten wir bei AATHIS
+          So arbeiten wir bei ATHIS
         </h1>
         <p className="max-w-3xl text-sm leading-relaxed text-slate-600 md:text-base">
           Ein klarer, transparenter Ablauf ist die Basis für eine gute
-          Zusammenarbeit. Mit AATHIS wissen Sie von Anfang an, wie wir vorgehen –
+          Zusammenarbeit. Mit ATHIS wissen Sie von Anfang an, wie wir vorgehen –
           von der ersten Anfrage bis zur laufenden Betreuung Ihrer
           Reinigungsleistungen.
         </p>

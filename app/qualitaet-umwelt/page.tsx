@@ -6,11 +6,11 @@ export default function QualitaetUmweltPage() {
           Qualität &amp; Umwelt
         </p>
         <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-          Qualität und Umwelt bei AATHIS
+          Qualität und Umwelt bei ATHIS
         </h1>
         <p className="max-w-3xl text-sm leading-relaxed text-slate-600 md:text-base">
           Hohe Reinigungsqualität und ein verantwortungsvoller Umgang mit
-          Ressourcen gehören bei AATHIS zusammen. Wir möchten nicht nur saubere
+          Ressourcen gehören bei ATHIS zusammen. Wir möchten nicht nur saubere
           Oberflächen hinterlassen, sondern auch verantwortungsbewusst handeln –
           gegenüber Menschen, Materialien und Umwelt.
         </p>
@@ -99,7 +99,7 @@ export default function QualitaetUmweltPage() {
           selbstverständlich.
         </p>
         <p className="mt-3 text-sm text-slate-600 md:text-base">
-          AATHIS behandelt Ihr Objekt, als wäre es das eigene – mit Fokus auf
+          ATHIS behandelt Ihr Objekt, als wäre es das eigene – mit Fokus auf
           Sauberkeit, Werterhalt und ein langfristig gepflegtes Umfeld.
         </p>
       </section>

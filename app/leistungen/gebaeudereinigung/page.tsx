@@ -11,7 +11,7 @@ export default function GebaeudereinigungPage() {
           Gebäudereinigung für einen gepflegten Gesamtauftritt
         </h1>
         <p className="max-w-3xl text-sm leading-relaxed text-slate-600 md:text-base">
-          Die Gebäudereinigung von AATHIS umfasst die umfassende Pflege Ihrer
+          Die Gebäudereinigung von ATHIS umfasst die umfassende Pflege Ihrer
           Immobilien – von Außenbereichen über Allgemeinflächen bis hin zu
           Treppenhäusern und Nebenräumen. Wir helfen Ihnen, den Wert Ihrer
           Gebäude in Trossingen und Baden-Württemberg langfristig zu erhalten.
@@ -56,10 +56,10 @@ export default function GebaeudereinigungPage() {
           </ul>
           <div className="mt-4 border-t border-slate-200 pt-4 text-sm text-slate-600">
             <p className="font-semibold text-slate-900">
-              Warum AATHIS für Ihre Gebäudereinigung?
+              Warum ATHIS für Ihre Gebäudereinigung?
             </p>
             <p className="mt-2">
-              Mit AATHIS koordinieren Sie sämtliche Aufgaben der
+              Mit ATHIS koordinieren Sie sämtliche Aufgaben der
               Gebäudereinigung über einen verlässlichen Partner – mit
               strukturiertem Vorgehen, klaren Angeboten und regionaler Nähe.
             </p>
@@ -71,7 +71,7 @@ export default function GebaeudereinigungPage() {
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-lg font-semibold tracking-tight md:text-xl">
-              Gebäudereinigung mit AATHIS planen
+              Gebäudereinigung mit ATHIS planen
             </h2>
             <p className="mt-1 text-sm md:text-base">
               Ob einzelne Immobilie oder Portfolio – wir entwickeln mit Ihnen ein

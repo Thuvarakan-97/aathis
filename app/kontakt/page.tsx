@@ -6,7 +6,7 @@ export default function KontaktPage() {
           Kontakt
         </p>
         <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-          Kontakt zu AATHIS – wir freuen uns auf Ihre Anfrage
+          Kontakt zu ATHIS – wir freuen uns auf Ihre Anfrage
         </h1>
         <p className="max-w-3xl text-sm leading-relaxed text-slate-600 md:text-base">
           Sie möchten ein Angebot für Büroreinigung, Gebäudereinigung,
@@ -34,7 +34,7 @@ export default function KontaktPage() {
             <div>
               <p className="font-semibold text-slate-900">Telefon</p>
               <p className="mt-1">
-                Telefon: <span className="text-slate-700">0177 2061431</span>
+                Telefon: <span className="text-slate-700">01789 777750</span>
               </p>
             </div>
             <div>
@@ -62,13 +62,29 @@ export default function KontaktPage() {
             <h2 className="text-xl font-semibold tracking-tight text-slate-900">
               Schreiben Sie uns eine Nachricht
             </h2>
-            <form className="mt-4 space-y-3 text-sm">
+            <form
+              className="mt-4 space-y-3 text-sm"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="81c96383-54a8-4b6c-b573-d02c3da367b5"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="Neue Kontaktanfrage von der Kontaktseite"
+              />
               <div>
                 <label className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">
                   Name *
                 </label>
                 <input
                   type="text"
+                  name="name"
+                  required
                   className="w-full rounded-xl border border-slate-200 px-3 py-2 outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
                   placeholder="Ihr Name"
                 />
@@ -80,6 +96,8 @@ export default function KontaktPage() {
                   </label>
                   <input
                     type="email"
+                    name="email"
+                    required
                     className="w-full rounded-xl border border-slate-200 px-3 py-2 outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
                     placeholder="Ihre E-Mail-Adresse"
                   />
@@ -90,6 +108,7 @@ export default function KontaktPage() {
                   </label>
                   <input
                     type="tel"
+                    name="phone"
                     className="w-full rounded-xl border border-slate-200 px-3 py-2 outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
                     placeholder="Optional für Rückfragen"
                   />
@@ -101,6 +120,7 @@ export default function KontaktPage() {
                 </label>
                 <input
                   type="text"
+                  name="subject_line"
                   className="w-full rounded-xl border border-slate-200 px-3 py-2 outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
                   placeholder="z.B. Angebot Büroreinigung in Trossingen"
                 />
@@ -111,6 +131,8 @@ export default function KontaktPage() {
                 </label>
                 <textarea
                   rows={4}
+                  name="message"
+                  required
                   className="w-full rounded-xl border border-slate-200 px-3 py-2 outline-none ring-slate-200 placeholder:text-slate-400 focus:ring-2"
                   placeholder="Beschreiben Sie kurz Ihr Objekt und die gewünschten Leistungen."
                 />

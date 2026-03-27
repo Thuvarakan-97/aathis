@@ -48,6 +48,66 @@ export default function UeberUnsPage() {
         </div>
       </section>
 
+      {/* Schwerpunkt Industriereinigung */}
+      <section className="space-y-6 rounded-3xl bg-white p-6 shadow-sm md:p-8">
+        <div className="max-w-4xl space-y-3">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+            Unser Schwerpunkt
+          </p>
+          <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+            Industriereinigung ist das Herzstück von ATHIS
+          </h2>
+          <p className="text-sm leading-relaxed text-slate-600 md:text-base">
+            Die Industriereinigung ist der wichtigste Bereich unseres
+            Unternehmens. Gerade in Produktions- und Lagerumgebungen reicht
+            klassische Reinigung nicht aus: Prozesse laufen im Takt, Flächen sind
+            hoch beansprucht und Sauberkeit hat direkten Einfluss auf Sicherheit,
+            Qualität und Produktivität. Genau hier liegt unsere Kernkompetenz.
+          </p>
+          <p className="text-sm leading-relaxed text-slate-600 md:text-base">
+            Wir entwickeln für jedes Objekt ein individuelles Reinigungskonzept,
+            das sich an Ihren Abläufen orientiert. Dazu gehören feste
+            Reinigungsintervalle, klar definierte Verantwortlichkeiten und eine
+            Ausführung, die auf sensible Bereiche, Schichtbetrieb und laufende
+            Prozesse abgestimmt ist.
+          </p>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <h3 className="text-sm font-semibold text-slate-900">
+              Was wir in der Industriereinigung besonders beachten
+            </h3>
+            <ul className="mt-3 space-y-2 text-sm text-slate-600">
+              <li>• Reinigung von Produktions-, Lager- und Verkehrsflächen</li>
+              <li>• Materialgerechte Verfahren für Maschinenumfelder</li>
+              <li>• Sichere Arbeitsweise nach klaren Standards</li>
+              <li>• Planbare Einsätze auch außerhalb der Kernzeiten</li>
+              <li>• Lückenlose Abstimmung mit Ihren Ansprechpartnern vor Ort</li>
+            </ul>
+          </div>
+          <div className="rounded-2xl border border-sky-100 bg-sky-50 p-5">
+            <h3 className="text-sm font-semibold text-slate-900">
+              Ihr Mehrwert durch unseren Fokus
+            </h3>
+            <ul className="mt-3 space-y-2 text-sm text-slate-700">
+              <li>• Stabilere Hygiene- und Sicherheitsstandards</li>
+              <li>• Weniger Störungen im laufenden Betrieb</li>
+              <li>• Werterhalt von Böden, Flächen und Ausstattung</li>
+              <li>• Transparente Qualität durch klare Abläufe</li>
+              <li>• Ein Partner, der industrielle Anforderungen versteht</li>
+            </ul>
+          </div>
+        </div>
+
+        <p className="max-w-4xl text-sm leading-relaxed text-slate-600 md:text-base">
+          Unsere Industriereinigung verbindet Erfahrung, strukturierte Prozesse
+          und zuverlässige Umsetzung. Deshalb vertrauen uns Unternehmen, die in
+          ihrem Betrieb keine Kompromisse bei Sauberkeit, Sicherheit und
+          Kontinuität eingehen möchten.
+        </p>
+      </section>
+
       {/* Werte & Mission */}
       <section className="space-y-6">
         <div className="max-w-3xl">
@@ -93,10 +153,10 @@ export default function UeberUnsPage() {
         </div>
       </section>
 
-      {/* Warum AATHIS */}
+      {/* Warum ATHIS */}
       <section className="space-y-6 rounded-3xl bg-white p-6 shadow-sm md:p-8">
         <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-          Warum sich Kundinnen und Kunden für AATHIS entscheiden
+          Warum sich Kundinnen und Kunden für ATHIS entscheiden
         </h2>
         <div className="grid gap-4 md:grid-cols-2">
           <div>
@@ -150,7 +210,7 @@ export default function UeberUnsPage() {
               Unser Team – engagiert, geschult, verantwortungsbewusst
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-base">
-              Hinter AATHIS steht ein Team aus sorgfältig ausgewählten und
+              Hinter ATHIS steht ein Team aus sorgfältig ausgewählten und
               geschulten Mitarbeitenden. Wir legen großen Wert auf
               Zuverlässigkeit, respektvollen Umgang und fachgerechten Einsatz
               von Reinigungsmitteln und -techniken.

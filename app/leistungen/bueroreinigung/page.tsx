@@ -12,7 +12,7 @@ export default function BueroreinigungPage() {
         </h1>
         <p className="max-w-3xl text-sm leading-relaxed text-slate-600 md:text-base">
           Saubere Büros tragen zu einem professionellen Auftritt und zum
-          Wohlbefinden Ihrer Mitarbeitenden bei. AATHIS übernimmt die
+          Wohlbefinden Ihrer Mitarbeitenden bei. ATHIS übernimmt die
           Büroreinigung in Trossingen und der Region Baden-Württemberg –
           zuverlässig, planbar und in hoher Qualität.
         </p>
@@ -62,7 +62,7 @@ export default function BueroreinigungPage() {
           </ul>
           <div className="mt-4 border-t border-slate-200 pt-4 text-sm text-slate-600">
             <p className="font-semibold text-slate-900">
-              Warum AATHIS als Partner?
+              Warum ATHIS als Partner?
             </p>
             <p className="mt-2">
               Wir verstehen die Anforderungen moderner Büros. Pünktlichkeit,

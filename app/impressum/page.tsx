@@ -38,7 +38,7 @@ export default function ImpressumPage() {
         <div>
           <p className="font-semibold text-slate-900">Kontakt</p>
           <p className="mt-1">
-            Telefon: 0177 2061431
+            Telefon: 01789 777750
             <br />
             E-Mail: Athis-Dienstleistungen@hotmail.com
           </p>

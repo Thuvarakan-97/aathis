@@ -13,7 +13,7 @@ export default function GrundreinigungPage() {
         <p className="max-w-3xl text-sm leading-relaxed text-slate-600 md:text-base">
           Mit einer Grundreinigung werden tief sitzende Verschmutzungen entfernt,
           die in der regelmäßigen Unterhaltsreinigung nicht vollständig erreicht
-          werden. AATHIS bietet Grundreinigungen für Büros, Gebäude und private
+          werden. ATHIS bietet Grundreinigungen für Büros, Gebäude und private
           Objekte in Trossingen und Baden-Württemberg.
         </p>
       </section>
@@ -57,7 +57,7 @@ export default function GrundreinigungPage() {
           </ul>
           <div className="mt-4 border-t border-slate-200 pt-4 text-sm text-slate-600">
             <p className="font-semibold text-slate-900">
-              Warum AATHIS für Ihre Grundreinigung?
+              Warum ATHIS für Ihre Grundreinigung?
             </p>
             <p className="mt-2">
               Wir analysieren Ihre Bodenbeläge und wählen passende Methoden und
@@ -72,7 +72,7 @@ export default function GrundreinigungPage() {
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-lg font-semibold tracking-tight md:text-xl">
-              Grundreinigung mit AATHIS anfragen
+              Grundreinigung mit ATHIS anfragen
             </h2>
             <p className="mt-1 text-sm md:text-base">
               Teilen Sie uns Belagsarten, Flächengrößen und gewünschte Termine

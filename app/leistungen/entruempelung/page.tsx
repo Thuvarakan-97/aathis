@@ -12,7 +12,7 @@ export default function EntruempelungPage() {
         </h1>
         <p className="max-w-3xl text-sm leading-relaxed text-slate-600 md:text-base">
           Ob Wohnung, Keller, Garage oder Gewerbefläche – mit der Entrümpelung
-          durch AATHIS schaffen Sie schnell wieder Platz und Ordnung. Wir kümmern
+          durch ATHIS schaffen Sie schnell wieder Platz und Ordnung. Wir kümmern
           uns um Räumung und fachgerechte Entsorgung in Trossingen und
           Baden-Württemberg.
         </p>
@@ -57,7 +57,7 @@ export default function EntruempelungPage() {
           </ul>
           <div className="mt-4 border-t border-slate-200 pt-4 text-sm text-slate-600">
             <p className="font-semibold text-slate-900">
-              Warum AATHIS für Ihre Entrümpelung?
+              Warum ATHIS für Ihre Entrümpelung?
             </p>
             <p className="mt-2">
               Wir arbeiten strukturiert, zügig und mit Fingerspitzengefühl – und
@@ -72,7 +72,7 @@ export default function EntruempelungPage() {
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-lg font-semibold tracking-tight md:text-xl">
-              Entrümpelung mit AATHIS anfragen
+              Entrümpelung mit ATHIS anfragen
             </h2>
             <p className="mt-1 text-sm md:text-base">
               Beschreiben Sie uns kurz Umfang, Objektart und Standort – wir melden

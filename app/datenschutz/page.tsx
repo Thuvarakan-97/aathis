@@ -6,7 +6,7 @@ export default function DatenschutzPage() {
           Datenschutzerklärung
         </h1>
         <p className="max-w-3xl text-sm leading-relaxed text-slate-600 md:text-base">
-          Der Schutz Ihrer persönlichen Daten ist uns, AATHIS, sehr wichtig. Wir
+          Der Schutz Ihrer persönlichen Daten ist uns, ATHIS, sehr wichtig. Wir
           behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der
           gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
         </p>
@@ -36,7 +36,7 @@ export default function DatenschutzPage() {
             <br />
             Deutschland
             <br />
-            Telefon: 0177 2061431
+            Telefon: 01789 777750
             <br />
             E-Mail: Athis-Dienstleistungen@hotmail.com
           </p>

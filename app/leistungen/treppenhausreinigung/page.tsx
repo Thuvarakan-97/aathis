@@ -11,7 +11,7 @@ export default function TreppenhausreinigungPage() {
           Treppenhausreinigung für einen gepflegten ersten Eindruck
         </h1>
         <p className="max-w-3xl text-sm leading-relaxed text-slate-600 md:text-base">
-          Das Treppenhaus ist die Visitenkarte eines Hauses. AATHIS sorgt mit
+          Das Treppenhaus ist die Visitenkarte eines Hauses. ATHIS sorgt mit
           regelmäßiger Treppenhausreinigung dafür, dass Bewohner, Mieter und
           Besucher Ihr Objekt in Trossingen und Baden-Württemberg stets gepflegt
           erleben.
@@ -57,7 +57,7 @@ export default function TreppenhausreinigungPage() {
           </ul>
           <div className="mt-4 border-t border-slate-200 pt-4 text-sm text-slate-600">
             <p className="font-semibold text-slate-900">
-              Warum AATHIS für Ihre Treppenhäuser?
+              Warum ATHIS für Ihre Treppenhäuser?
             </p>
             <p className="mt-2">
               Wir stimmen unsere Einsätze auf die Bedürfnisse von Hausverwaltungen
@@ -72,7 +72,7 @@ export default function TreppenhausreinigungPage() {
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-lg font-semibold tracking-tight md:text-xl">
-              Treppenhausreinigung mit AATHIS anfragen
+              Treppenhausreinigung mit ATHIS anfragen
             </h2>
             <p className="mt-1 text-sm md:text-base">
               Teilen Sie uns Anzahl der Eingänge, Etagen und gewünschten

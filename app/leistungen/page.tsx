@@ -28,11 +28,11 @@ const services = [
   },
   {
     slug: "glasreinigung",
-    title: "Glasreinigung",
+    title: "Glas/Fenster Reinigung",
     description:
       "Streifenfreie Fenster, Glasfassaden und Schaufenster für einen klaren Auftritt.",
     image: "/images/services/glasreinigung.svg",
-    badge: "Fenster & Glas",
+    badge: "Glas & Fenster",
   },
   {
     slug: "treppenhausreinigung",
@@ -43,12 +43,12 @@ const services = [
     badge: "Haus & Aufgänge",
   },
   {
-    slug: "endbaureinigung",
-    title: "Endbaureinigung",
+    slug: "industriereinigung",
+    title: "Industriereinigung",
     description:
-      "Gründliche Reinigung nach Bau- und Renovierungsarbeiten – bezugsfertige Räume ohne Bauschmutz.",
-    image: "/images/services/endbaureinigung.svg",
-    badge: "Nach Bau & Umbau",
+      "Professionelle Reinigung von Produktions- und Lagerflächen mit Fokus auf Sicherheit, Hygiene und Abläufe.",
+    image: "/images/services/gebaeudereinigung.svg",
+    badge: "Produktion & Lager",
   },
   {
     slug: "grundreinigung",
@@ -97,7 +97,7 @@ export default function LeistungenPage() {
             Unsere Reinigungsleistungen im Überblick
           </h1>
           <p className="mt-4 text-sm leading-relaxed text-slate-600 md:text-base">
-            AATHIS bietet Ihnen ein umfassendes Angebot rund um Reinigung, Pflege
+            ATHIS bietet Ihnen ein umfassendes Angebot rund um Reinigung, Pflege
             und Werterhalt Ihrer Objekte. Von der regelmäßigen Unterhaltsreinigung
             über spezialisierte Büroreinigung bis hin zu Winterdienst und
             Gartenpflege – wir stellen Ihnen genau das Leistungspaket zusammen,
