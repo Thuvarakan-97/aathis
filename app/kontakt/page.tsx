@@ -163,13 +163,42 @@ export default function KontaktPage() {
             </form>
           </div>
 
-          <div className="rounded-3xl border border-dashed border-slate-300 bg-slate-50 p-6 text-sm text-slate-600">
-            <h2 className="text-sm font-semibold text-slate-900">
+          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+            <h2 className="border-b border-slate-100 px-5 py-4 text-sm font-semibold text-slate-900">
               So finden Sie uns
             </h2>
-            <p className="mt-2">
-              Hier kann eine Karte (z.B. Google Maps) mit der Lage von Trossingen
-              in Baden-Württemberg eingebunden werden.
+            <p className="px-5 pt-3 text-xs text-slate-600">
+              Unser Standort in Trossingen, Baden-Württemberg (Karte:
+              OpenStreetMap, kostenlos nutzbar).
+            </p>
+            <div className="relative mt-3 aspect-[4/3] w-full min-h-[220px] md:aspect-[16/9]">
+              <iframe
+                title="Karte: Trossingen, Baden-Württemberg"
+                className="absolute inset-0 h-full w-full border-0"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=8.611%2C48.057%2C8.665%2C48.093&layer=mapnik"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+            <p className="border-t border-slate-100 px-5 py-3 text-xs text-slate-500">
+              <a
+                href="https://www.openstreetmap.org/?mlat=48.0747&mlon=8.6371#map=14/48.0747/8.6371"
+                className="font-medium text-sky-700 underline underline-offset-2 hover:text-sky-900"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Größere Karte öffnen
+              </a>
+              <span className="mx-2 text-slate-300">·</span>
+              ©{" "}
+              <a
+                href="https://www.openstreetmap.org/copyright"
+                className="underline underline-offset-2 hover:text-slate-700"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                OpenStreetMap-Mitwirkende
+              </a>
             </p>
           </div>
         </div>
