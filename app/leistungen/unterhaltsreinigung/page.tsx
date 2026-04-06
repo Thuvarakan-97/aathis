@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Unterhaltsreinigung",
+  description:
+    "Unterhaltsreinigung in Trossingen und Baden-Württemberg von Athi's Service: regelmäßige, zuverlässige Reinigung von Büros, Praxen, Treppenhäusern und Gewerbeflächen.",
+  path: "/leistungen/unterhaltsreinigung",
+});
 
 export default function UnterhaltsreinigungPage() {
   return (

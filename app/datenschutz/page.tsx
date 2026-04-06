@@ -1,3 +1,12 @@
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Datenschutzerklärung",
+  description:
+    "Datenschutzerklärung der Athi's Service Website: Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.",
+  path: "/datenschutz",
+});
+
 export default function DatenschutzPage() {
   return (
     <div className="space-y-10">

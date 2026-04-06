@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Gebäudereinigung",
+  description:
+    "Gebäudereinigung innen und außen: Athi's Service reinigt und pflegt Immobilien in Trossingen und Baden-Württemberg – von Allgemeinflächen bis zur Objektbetreuung.",
+  path: "/leistungen/gebaeudereinigung",
+});
 
 export default function GebaeudereinigungPage() {
   return (

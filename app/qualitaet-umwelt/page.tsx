@@ -1,3 +1,12 @@
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Qualität & Umwelt",
+  description:
+    "Qualitätsstandards und umweltbewusste Reinigung bei Athi's Service: geschulte Teams, klare Pläne, sorgfältiger Mittel-Einsatz – für Industrie- und Gebäudereinigung in der Region.",
+  path: "/qualitaet-umwelt",
+});
+
 export default function QualitaetUmweltPage() {
   return (
     <div className="space-y-14">

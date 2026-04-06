@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Büroreinigung",
+  description:
+    "Professionelle Büroreinigung in Trossingen und der Region: saubere Arbeitsplätze, Sanitär- und Sozialräume durch Athi's Service (ATHIS) in Baden-Württemberg.",
+  path: "/leistungen/bueroreinigung",
+});
 
 export default function BueroreinigungPage() {
   return (

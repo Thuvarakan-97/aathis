@@ -1,3 +1,12 @@
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Impressum",
+  description:
+    "Impressum und rechtliche Angaben zu Athi's Service (ATHIS), Reinigungsfirma in Trossingen, Baden-Württemberg – Kontakt, Adresse und Verantwortlichkeiten.",
+  path: "/impressum",
+});
+
 export default function ImpressumPage() {
   return (
     <div className="space-y-10">

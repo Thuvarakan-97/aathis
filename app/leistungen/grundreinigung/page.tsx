@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Grundreinigung",
+  description:
+    "Grundreinigung und intensive Tiefenreinigung von Böden und Flächen: Ergänzung zur Unterhaltsreinigung durch Athi's Service in Trossingen und der Region.",
+  path: "/leistungen/grundreinigung",
+});
 
 export default function GrundreinigungPage() {
   return (

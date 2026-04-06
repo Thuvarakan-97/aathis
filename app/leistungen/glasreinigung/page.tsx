@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Glas- und Fensterreinigung",
+  description:
+    "Glas- und Fensterreinigung in Trossingen & Umgebung: streifenfreie Fenster, Schaufenster und Glasflächen durch Athi's Service – professionell und sorgfältig.",
+  path: "/leistungen/glasreinigung",
+});
 
 export default function GlasreinigungPage() {
   return (

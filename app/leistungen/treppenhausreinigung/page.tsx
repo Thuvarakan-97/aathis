@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Treppenhausreinigung",
+  description:
+    "Treppenhausreinigung für Wohn- und Gewerbeimmobilien: gepflegte Eingänge und Aufgänge mit Athi's Service in Trossingen und Baden-Württemberg.",
+  path: "/leistungen/treppenhausreinigung",
+});
 
 export default function TreppenhausreinigungPage() {
   return (

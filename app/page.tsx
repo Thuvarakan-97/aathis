@@ -1,5 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
+import { defineHomeMetadata } from "@/lib/seo";
+
+export const metadata = defineHomeMetadata();
 
 const heroImages = ["/images/pic1.jpg", "/images/pic2.jpg", "/images/pic3.jpg"];
 

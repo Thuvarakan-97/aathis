@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Winterdienst",
+  description:
+    "Winterdienst: Räumen und Streuen von Wegen, Einfahrten und Flächen in Trossingen und Baden-Württemberg – zuverlässig durch Athi's Service.",
+  path: "/leistungen/winterdienst",
+});
 
 export default function WinterdienstPage() {
   return (

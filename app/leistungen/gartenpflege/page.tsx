@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Gartenpflege",
+  description:
+    "Gartenpflege und Außenanlagen: Pflege von Grünflächen rund um Ihre Immobilie – ergänzend zu unseren Reinigungsleistungen, Athi's Service Trossingen & BW.",
+  path: "/leistungen/gartenpflege",
+});
 
 export default function GartenpflegePage() {
   return (

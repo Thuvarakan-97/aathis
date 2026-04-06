@@ -1,5 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Leistungen",
+  description:
+    "Alle Reinigungsleistungen von Athi's Service: Industriereinigung, Unterhalts- und Büroreinigung, Gebäudereinigung, Glas-/Fensterreinigung, Treppenhaus, Grundreinigung, Winterdienst, Gartenpflege und Entrümpelung in Trossingen & BW.",
+  path: "/leistungen",
+});
 
 const services = [
   {

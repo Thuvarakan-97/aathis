@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Entrümpelung",
+  description:
+    "Entrümpelung und fachgerechte Räumung: Wohnungen, Keller, Gewerbeflächen in Trossingen und Baden-Württemberg – ordentlich und zuverlässig mit Athi's Service.",
+  path: "/leistungen/entruempelung",
+});
 
 export default function EntruempelungPage() {
   return (

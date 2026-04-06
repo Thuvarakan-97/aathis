@@ -1,4 +1,12 @@
 import Image from "next/image";
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Über uns",
+  description:
+    "Erfahren Sie mehr über Athi's Service (ATHIS) aus Trossingen: Unser Schwerpunkt liegt auf professioneller Industriereinigung – ergänzt durch Gebäudereinigung, Büroservice und Qualität in Baden-Württemberg.",
+  path: "/ueber-uns",
+});
 
 export default function UeberUnsPage() {
   return (

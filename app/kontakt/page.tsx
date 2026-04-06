@@ -1,3 +1,12 @@
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Kontakt & Angebot",
+  description:
+    "Kontaktieren Sie Athi's Service in Trossingen: Telefon 01789 777750, E-Mail und Kontaktformular. Angebot für Industriereinigung, Gebäudereinigung und weitere Leistungen in Baden-Württemberg.",
+  path: "/kontakt",
+});
+
 export default function KontaktPage() {
   return (
     <div className="space-y-14">

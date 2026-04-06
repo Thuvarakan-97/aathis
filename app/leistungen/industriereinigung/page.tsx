@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "Industriereinigung",
+  description:
+    "Industriereinigung ist unser Kerngeschäft: Produktions- und Lagerflächen, Hallen und Maschinenumfeld in Trossingen und Baden-Württemberg – sicher, planbar, professionell mit Athi's Service (ATHIS).",
+  path: "/leistungen/industriereinigung",
+});
 
 export default function IndustriereinigungPage() {
   return (

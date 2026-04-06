@@ -1,3 +1,12 @@
+import { definePageMetadata } from "@/lib/seo";
+
+export const metadata = definePageMetadata({
+  title: "So arbeiten wir",
+  description:
+    "Unser Ablauf bei Athi's Service: Anfrage, Beratung, Angebot und zuverlässige Umsetzung – transparent geplant für Industriereinigung und Gebäudereinigung in Trossingen und Baden-Württemberg.",
+  path: "/so-arbeiten-wir",
+});
+
 export default function SoArbeitenWirPage() {
   return (
     <div className="space-y-14">

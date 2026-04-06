@@ -1,8 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
+import SeoJsonLd from "@/app/components/SeoJsonLd";
+import { DEFAULT_OG_IMAGE, SITE_NAME, getSiteUrl } from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,16 +16,72 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0284c7",
+};
+
 export const metadata: Metadata = {
-  title:
-    "Athi‘s Service – Ihre zuverlässige Reinigungsfirma in Baden-Württemberg",
+  metadataBase: new URL(getSiteUrl()),
+  title: {
+    default: `${SITE_NAME} – Industriereinigung & Reinigung Trossingen`,
+    template: `%s | ${SITE_NAME}`,
+  },
   description:
-    "Athi‘s Service ist Ihre professionelle Reinigungsfirma aus Trossingen für Gebäudereinigung, Büroreinigung, Unterhaltsreinigung, Glasreinigung, Winterdienst und mehr.",
+    "Reinigungsfirma Athi's Service (ATHIS) in Trossingen, Baden-Württemberg: Industriereinigung, Gebäudereinigung, Büroreinigung, Winterdienst, Entrümpelung und Glas-/Fensterreinigung.",
+  keywords: [
+    "Industriereinigung",
+    "Reinigungsfirma Trossingen",
+    "Gebäudereinigung Baden-Württemberg",
+    "Büroreinigung",
+    "Unterhaltsreinigung",
+    "Winterdienst",
+    "Entrümpelung",
+    "Glasreinigung",
+    "Fensterreinigung",
+    "ATHIS",
+  ],
+  authors: [{ name: SITE_NAME, url: getSiteUrl() }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  formatDetection: {
+    telephone: true,
+    email: true,
+    address: true,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "de_DE",
+    siteName: SITE_NAME,
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE,
+        alt: `${SITE_NAME} – Reinigungsfirma in Trossingen`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [DEFAULT_OG_IMAGE],
+  },
   icons: {
     icon: "/images/favicon.ico",
     shortcut: "/images/favicon.ico",
     apple: "/images/favicon.ico",
   },
+  category: "business",
 };
 
 const navServices = [
@@ -49,6 +107,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-sky-50 text-slate-900`}
       >
+        <SeoJsonLd />
         <div className="flex min-h-screen flex-col">
           <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur">
             <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
