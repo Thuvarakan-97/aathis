@@ -247,7 +247,7 @@ export default function RootLayout({
               </div>
               <div className="mt-8 border-t border-slate-100 pt-4 text-xs text-slate-500">
                 © {new Date().getFullYear()} ATHIS – Reinigungsfirma in
-                Baden-Württemberg. Alle Rechte vorbehalten.
+                Baden-Württemberg. Alles Rechte vorbehalten.
               </div>
             </div>
           </footer>
