@@ -3,7 +3,7 @@ import { definePageMetadata } from "@/lib/seo";
 export const metadata = definePageMetadata({
   title: "Kontakt & Angebot",
   description:
-    "Kontaktieren Sie Athi's Service in Trossingen: Telefon 01789 777750, E-Mail und Kontaktformular. Angebot für Industriereinigung, Gebäudereinigung und weitere Leistungen in Baden-Württemberg.",
+    "Kontaktieren Sie Athi's Service in Trossingen: Telefon 01773939943, E-Mail und Kontaktformular. Angebot für Industriereinigung, Gebäudereinigung und weitere Leistungen in Baden-Württemberg.",
   path: "/kontakt",
 });
 
@@ -43,7 +43,7 @@ export default function KontaktPage() {
             <div>
               <p className="font-semibold text-slate-900">Telefon</p>
               <p className="mt-1">
-                Telefon: <span className="text-slate-700">01789 777750</span>
+                Telefon: <span className="text-slate-700">01773939943</span>
               </p>
             </div>
             <div>
@@ -51,7 +51,7 @@ export default function KontaktPage() {
               <p className="mt-1">
                 E-Mail:{" "}
                 <span className="text-slate-700">
-                  Athis-Dienstleistungen@hotmail.com
+                  athis-service@outlook.de 
                 </span>
               </p>
             </div>

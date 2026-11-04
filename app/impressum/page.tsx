@@ -40,25 +40,23 @@ export default function ImpressumPage() {
             Inhaber / Geschäftsführer
           </p>
           <p className="mt-1">
-            [Platzhalter: Name des Inhabers / Geschäftsführers eintragen]
+            Sriranjan Nilagini
           </p>
         </div>
 
         <div>
           <p className="font-semibold text-slate-900">Kontakt</p>
           <p className="mt-1">
-            Telefon: 01789 777750
+            Telefon: 01773939943
             <br />
-            E-Mail: Athis-Dienstleistungen@hotmail.com
+            E-Mail: athis-service@outlook.de 
           </p>
         </div>
 
         <div>
           <p className="font-semibold text-slate-900">Umsatzsteuer-ID</p>
           <p className="mt-1">
-            Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
-            <br />
-            [Platzhalter: USt-IdNr. eintragen, falls vorhanden]
+            DE836420721
           </p>
         </div>
 
@@ -67,8 +65,7 @@ export default function ImpressumPage() {
             Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
           </p>
           <p className="mt-1">
-            [Platzhalter: Name und Anschrift der verantwortlichen Person
-            eintragen]
+            Sriranjan Nilagini
           </p>
         </div>
       </section>

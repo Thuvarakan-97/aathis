@@ -19,13 +19,13 @@ export default function DatenschutzPage() {
           behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der
           gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
         </p>
-        <p className="max-w-3xl text-sm leading-relaxed text-amber-700 md:text-base">
+        {/* <p className="max-w-3xl text-sm leading-relaxed text-amber-700 md:text-base">
           Hinweis: Diese Datenschutzerklärung ist ein strukturiertes
           Platzhaltermuster. Die finale Version muss vor Veröffentlichung durch
           eine rechtliche Fachperson (z.B. Anwalt oder Datenschutzbeauftragten)
           geprüft und an das tatsächliche Angebot und die eingesetzten Dienste
           angepasst werden.
-        </p>
+        </p> */}
       </section>
 
       <section className="space-y-4 text-sm text-slate-700 md:text-base">
@@ -45,9 +45,9 @@ export default function DatenschutzPage() {
             <br />
             Deutschland
             <br />
-            Telefon: 01789 777750
+            Telefon: 01773939943
             <br />
-            E-Mail: Athis-Dienstleistungen@hotmail.com
+            E-Mail: athis-service@outlook.de 
           </p>
         </div>
 
@@ -180,15 +180,13 @@ export default function DatenschutzPage() {
             umzusetzen.
           </p>
           <p className="mt-1">
-            Die jeweils aktuelle Fassung ist auf dieser Website abrufbar. Die
-            letzte Aktualisierung dieser Datenschutzerklärung erfolgte am
-            [Platzhalter: Datum eintragen].
+            Diese Datenschutzerklärung ist aktuell gültig und hat den Stand November 2026. Durch die Weiterentwicklung unserer Website, die Einführung neuer Funktionen oder aufgrund geänderter gesetzlicher Vorgaben kann es erforderlich werden, diese Datenschutzerklärung anzupassen. Wir behalten uns daher vor, die Datenschutzerklärung bei Bedarf zu aktualisieren. Es gilt jeweils die auf unserer Website veröffentlichte aktuelle Fassung.
           </p>
-          <p className="mt-2 text-amber-700">
+          {/* <p className="mt-2 text-amber-700">
             Wichtiger Hinweis: Lassen Sie die finale Fassung dieser
             Datenschutzerklärung vor Veröffentlichung rechtlich prüfen und
             individualisieren.
-          </p>
+          </p> */}
         </div>
       </section>
     </div>

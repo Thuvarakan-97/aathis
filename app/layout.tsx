@@ -286,11 +286,11 @@ export default function RootLayout({
                     78647 Trossingen
                   </p>
                   <p className="mt-3 text-sm text-slate-700">
-                    Telefon: <span className="text-slate-600">01789 777750</span>
+                    Telefon: <span className="text-slate-600">01773939943</span>
                     <br />
                     E-Mail:{" "}
                     <span className="text-slate-600">
-                      Athis-Dienstleistungen@hotmail.com
+                      athis-service@outlook.de 
                     </span>
                   </p>
                   <div className="mt-3 text-sm text-slate-700">

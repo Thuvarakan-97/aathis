@@ -26,7 +26,7 @@ export const BUSINESS = {
   postalCode: "78647",
   addressRegion: "Baden-Württemberg",
   addressCountry: "DE",
-  phone: "+491789777750",
-  phoneDisplay: "01789 777750",
-  email: "Athis-Dienstleistungen@hotmail.com",
+  phone: "+491773939943",
+  phoneDisplay: "01773939943",
+  email: "athis-service@outlook.de ",
 } as const;
