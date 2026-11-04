@@ -123,11 +123,11 @@ export default function DatenschutzPage() {
             jeweiligen Dienste, Zwecke, Rechtsgrundlagen, Speicherdauern und
             Widerspruchsmöglichkeiten konkret beschrieben werden.
           </p>
-          <p className="mt-1 text-amber-700">
+          {/* <p className="mt-1 text-amber-700">
             Platzhalter: Bitte ergänzen Sie hier die tatsächlich eingesetzten
             Tools und Cookie-Kategorien (z.B. technisch notwendig, Statistik,
             Marketing) sowie ggf. ein Consent-Management.
-          </p>
+          </p> */}
         </div>
 
         <div>
@@ -156,32 +156,31 @@ export default function DatenschutzPage() {
           <h2 className="text-lg font-semibold text-slate-900">
             6. Datensicherheit
           </h2>
-          <p className="mt-1">
+          <p className="mt-1 text-justify">
             Wir treffen geeignete technische und organisatorische Maßnahmen, um
             Ihre Daten vor Verlust, Missbrauch oder unberechtigtem Zugriff zu
             schützen. Zu den Maßnahmen können u.a. verschlüsselte
             Übertragungswege (z.B. SSL/TLS), Zugriffsbeschränkungen und
             regelmäßige Sicherungen gehören.
           </p>
-          <p className="mt-1 text-amber-700">
+          {/* <p className="mt-1 text-amber-700">
             Platzhalter: Bitte ergänzen Sie hier die konkret eingesetzten
             Sicherheitsmaßnahmen, soweit dies sinnvoll und zulässig ist.
-          </p>
+          </p> */}
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-slate-900">
             7. Aktualität und Änderung dieser Datenschutzerklärung
           </h2>
-          <p className="mt-1">
-            Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit
-            sie stets den aktuellen rechtlichen Anforderungen entspricht oder um
-            Änderungen unserer Leistungen in der Datenschutzerklärung
-            umzusetzen.
-          </p>
-          <p className="mt-1">
-            Diese Datenschutzerklärung ist aktuell gültig und hat den Stand November 2026. Durch die Weiterentwicklung unserer Website, die Einführung neuer Funktionen oder aufgrund geänderter gesetzlicher Vorgaben kann es erforderlich werden, diese Datenschutzerklärung anzupassen. Wir behalten uns daher vor, die Datenschutzerklärung bei Bedarf zu aktualisieren. Es gilt jeweils die auf unserer Website veröffentlichte aktuelle Fassung.
-          </p>
+          
+          <p className="mt-1 text-justify">
+            Diese Datenschutzerklärung ist aktuell gültig und hat den Stand November 2026. 
+
+            Durch die Weiterentwicklung unserer Website, die Einführung neuer Funktionen oder aufgrund geänderter gesetzlicher Vorgaben kann es erforderlich werden, diese Datenschutzerklärung anzupassen. 
+
+            Wir behalten uns daher vor, die Datenschutzerklärung bei Bedarf zu aktualisieren. Es gilt jeweils die auf unserer Website veröffentlichte aktuelle Fassung. 
+            </p>
           {/* <p className="mt-2 text-amber-700">
             Wichtiger Hinweis: Lassen Sie die finale Fassung dieser
             Datenschutzerklärung vor Veröffentlichung rechtlich prüfen und
