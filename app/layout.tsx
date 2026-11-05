@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import SeoJsonLd from "@/app/components/SeoJsonLd";
+import ThemeToggle from "@/app/components/ThemeToggle";
 import { DEFAULT_OG_IMAGE, SITE_NAME, getSiteUrl } from "@/lib/site";
 
 const geistSans = Geist({
@@ -109,28 +110,40 @@ export default function RootLayout({
       >
         <SeoJsonLd />
         <div className="flex min-h-screen flex-col">
-          <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur">
-            <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
-              <div className="flex items-center gap-4">
-                <Link href="/" className="flex items-center gap-3">
-                  <Image
-                    src="/images/logo.jpeg"
-                    alt="Logo Athi‘s Service"
-                    width={170}
-                    height={48}
-                    className="h-10 w-auto sm:h-12"
-                  />
-                  <div className="hidden flex-col leading-tight sm:flex">
-                    <span className="text-sm font-semibold tracking-tight sm:text-base">
-                      Athi‘s Service
-                    </span>
-                    <span className="text-[10px] font-medium uppercase tracking-[0.18em] text-slate-500">
-                      Reinigungsfirma in Trossingen
-                    </span>
-                  </div>
+          <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur">
+            <div className="mx-auto flex min-h-20 max-w-6xl items-center justify-between gap-4 px-4 py-3 md:px-6">
+              <Link href="/" className="flex min-w-0 items-center gap-3">
+                <Image
+                  src="/images/logo.jpeg"
+                  alt="Logo Athi‘s Service"
+                  width={170}
+                  height={48}
+                  className="h-8 w-24 shrink-0 object-contain sm:h-12 sm:w-auto"
+                />
+                <div className="hidden min-w-0 flex-col leading-tight sm:flex">
+                  <span className="text-sm font-semibold tracking-tight sm:text-base">
+                    Athi‘s Service
+                  </span>
+                  <span className="text-[10px] font-medium uppercase tracking-[0.18em] text-slate-500">
+                    Reinigungsfirma in Trossingen
+                  </span>
+                </div>
+              </Link>
+              <div className="flex shrink-0 items-center gap-2">
+                <ThemeToggle />
+                <Link
+                  href="/kontakt"
+                  className="shrink-0 rounded-full bg-sky-600 px-3 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-sky-700 sm:px-4 sm:text-sm"
+                >
+                  Angebot anfordern
                 </Link>
               </div>
-              <nav className="hidden items-center gap-6 text-sm font-medium text-slate-700 md:flex">
+            </div>
+            <nav
+              aria-label="Hauptnavigation"
+              className="hidden border-t border-slate-100 bg-white lg:block"
+            >
+              <div className="mx-auto flex max-w-6xl items-center justify-center gap-8 px-6 py-3 text-sm font-medium text-slate-700">
                 <Link href="/" className="hover:text-slate-900">
                   Startseite
                 </Link>
@@ -140,17 +153,17 @@ export default function RootLayout({
                 <div className="group relative">
                   <button
                     type="button"
-                    className="flex items-center gap-1 hover:text-slate-900"
+                    className="flex items-center gap-1 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky-600"
                   >
                     Leistungen
                     <span className="text-xs">▾</span>
                   </button>
-                  <div className="invisible absolute right-0 top-full mt-2 w-64 rounded-xl border border-slate-200 bg-white py-2 text-sm shadow-lg opacity-0 transition group-hover:visible group-hover:opacity-100">
+                  <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-72 -translate-x-1/2 rounded-2xl border border-slate-200 bg-white py-2 text-sm shadow-xl opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                     {navServices.map((item) => (
                       <Link
                         key={item.href}
                         href={item.href}
-                        className="block px-4 py-1.5 text-slate-700 hover:bg-slate-50"
+                        className="block px-4 py-2 text-slate-700 hover:bg-slate-50 hover:text-sky-700"
                       >
                         {item.label}
                       </Link>
@@ -166,25 +179,13 @@ export default function RootLayout({
                 <Link href="/kontakt" className="hover:text-slate-900">
                   Kontakt
                 </Link>
-                <Link
-                  href="/kontakt"
-                  className="rounded-full bg-sky-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-sky-700"
-                >
-                  Angebot anfordern
-                </Link>
-              </nav>
-              <div className="flex items-center gap-2 md:hidden">
-                <Link
-                  href="/kontakt"
-                  className="rounded-full bg-sky-600 px-3 py-1.5 text-xs font-semibold text-white shadow-sm hover:bg-sky-700"
-                >
-                  Angebot anfordern
-                </Link>
               </div>
-            </div>
-            {/* Mobile Navigation (ohne Dropdown-Logik, klar strukturiert) */}
-            <nav className="border-t border-slate-200 bg-white md:hidden">
-              <div className="mx-auto flex max-w-6xl gap-4 overflow-x-auto px-4 py-3 text-xs font-medium text-slate-700">
+            </nav>
+            <nav
+              aria-label="Mobile Navigation"
+              className="border-t border-slate-100 bg-white lg:hidden"
+            >
+              <div className="mx-auto flex max-w-6xl gap-6 overflow-x-auto px-4 py-3 text-sm font-medium text-slate-700 md:px-6">
                 <Link href="/" className="whitespace-nowrap hover:text-slate-900">
                   Startseite
                 </Link>
